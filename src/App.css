@@ -67,10 +67,30 @@ h4 {
   margin: 10px 0;
 }
 
+.ip-section {
+  font-size: 1.25em;
+  width: 50vh;
+  margin: 0 auto;
+}
+
 .volume {
   font-size: 1.25em;
   width: 50vh;
   margin: 0 auto;
+  appearance: none;
+  background-color: #2f6690;
+  border-radius: 20px;
+  height: 7px;
+}
+
+.volume::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: wheat;
+  border-radius: 50%;
+  border: 2px solid black;
+  cursor: pointer;
 }
 
 .record {
@@ -89,10 +109,6 @@ button {
   background-color: #ead2ac;
   color: #080708;
   cursor: pointer;
-}
-
-input {
-  width: 100%;
 }
 
 .footer {

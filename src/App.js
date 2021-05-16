@@ -88,7 +88,7 @@ function App() {
         })}
       </div>
 
-          <div className="volume">
+          <div className="ip-section">
             <h3>Volume</h3>
             <input type = "range"
                   step = "0.01" 
