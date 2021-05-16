@@ -1,38 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
+  font-family: 'Righteous', cursive;
+  background-color: #d1dede;
+  font-size: larger;
+  color: #1d201f;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  background-color: #080708;
+  color: #e6e8e6;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.drum-machine {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 50vh;
+  border: 4px solid #080708;
+  padding: 20px;
+  grid-gap: 10px;
+  background-color: #ead2ac;
+  width: 30vw;
+  margin: 50px auto;
+  margin-bottom: 20px;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
+}
+
+@media only screen and (max-width: 800px) {
+  .drum-machine {
+    width: 80vw;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.drum {
+  background-color: #c58882;
+  color: #080708;
+  border: 2px solid #080708;
+  border-radius: 10px;
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
 }
 
-.App-link {
-  color: #61dafb;
+.active {
+  background-color: #df928e;
+  color: #e6e8e6;
+  border: 2px solid #fff;
+  box-shadow: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3 {
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin: 10px 0;
+}
+
+.volume {
+  font-size: 1.25em;
+  width: 50vh;
+  margin: 0 auto;
+}
+
+.record {
+  font-size: 1.25em;
+  padding: 20px 0;
+  margin-bottom: 10px;
+}
+
+button {
+  font-family: 'Righteous', cursive;
+  font-size: 0.7em;
+  padding: 10px 20px;
+  border: 2px solid #080708;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+  margin: 10px;
+  background-color: #ead2ac;
+  color: #080708;
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+}
+
+.footer {
+  background-color: black;
+  color: wheat;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: wheat;
 }
